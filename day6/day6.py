@@ -2,7 +2,7 @@ idx = 0
 answers = []
 uniqueAnswers = []
 x = 0
-suma = 0
+ansSum = 0
 
 input = open("day6input.txt").read().split("\n\n")
 
@@ -13,8 +13,8 @@ for i in range(454):
             answers.append(answer)
             uniqueAnswers.append(len(answers))
     newUniqueAnswers = max(uniqueAnswers)
-    suma += newUniqueAnswers
+    ansSum += newUniqueAnswers
     idx += 1
     answers = []
     uniqueAnswers = []
-print("{0} people answered yes".format(suma))
+print("{0} people answered yes".format(ansSum))
